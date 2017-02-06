@@ -1,0 +1,35 @@
+﻿  AssemblyInfo.cpp
+  ConversionHelper.cpp
+ConversionHelper.cpp(10): warning C4018: '<': signed/unsigned mismatch
+  NvTriStrip.cpp
+NvTriStrip.cpp(219): warning C4018: '<': signed/unsigned mismatch
+NvTriStrip.cpp(251): warning C4267: '+=': conversion from 'size_t' to 'unsigned int', possible loss of data
+NvTriStrip.cpp(255): warning C4267: '+=': conversion from 'size_t' to 'unsigned int', possible loss of data
+NvTriStrip.cpp(307): warning C4018: '<': signed/unsigned mismatch
+NvTriStrip.cpp(324): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+NvTriStrip.cpp(345): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
+NvTriStrip.cpp(364): warning C4018: '<': signed/unsigned mismatch
+NvTriStrip.cpp(376): warning C4018: '<': signed/unsigned mismatch
+NvTriStrip.cpp(399): warning C4018: '<': signed/unsigned mismatch
+NvTriStrip.cpp(481): warning C4018: '<': signed/unsigned mismatch
+  NvTriStripObjects.cpp
+NvTriStripObjects.cpp(95): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(300): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(438): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(718): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(724): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(769): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(782): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(969): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(980): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(1036): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+NvTriStripObjects.cpp(1400): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(1576): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(1579): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(1733): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+NvTriStripObjects.cpp(1766): warning C4267: '+=': conversion from 'size_t' to 'int', possible loss of data
+  NvTriStripUtility.cpp
+  PrimitiveGroup.cpp
+  Generating Code...
+  .NETFramework,Version=v4.5.2.AssemblyAttributes.cpp
+  ManagedNvTriStrip.vcxproj -> D:\Programming\Repos\ManagedNvTriStrip\x64\Release\ManagedNvTriStrip.dll
