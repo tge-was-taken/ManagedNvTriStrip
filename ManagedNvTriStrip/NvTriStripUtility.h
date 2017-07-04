@@ -52,12 +52,12 @@ namespace ManagedNvTriStrip
 		/// <summary>
 		/// Generates strips from the given triangle indices and returns an array of stripped, optimized primitive groups.
 		/// </summary>
-		static bool Stripify(array<unsigned short>^ indices, array<PrimitiveGroup^>^ %primitiveGroups);
+		static bool GenerateStrips(array<unsigned short>^ indices, array<PrimitiveGroup^>^ %primitiveGroups);
 
 		/// <summary>
 		/// Generates strips from the given triangle indices and returns an array of stripped, optimized primitive groups.
 		/// </summary>
-		static bool Stripify(array<unsigned short>^ indices, array<PrimitiveGroup^>^ %primitiveGroups, bool validate);
+		static bool GenerateStrips(array<unsigned short>^ indices, array<PrimitiveGroup^>^ %primitiveGroups, bool validate);
 
 	private:
 		const static bool			USE_RESTART_DEFAULT		= false;
