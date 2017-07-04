@@ -1,15 +1,18 @@
 
 #include "NvTriStripUtility.h"
 #include "ConversionHelper.h"
+#include <memory>
+
+using namespace System::Runtime::InteropServices;
 
 namespace ManagedNvTriStrip
 {
-	bool NvTriStripUtility::Stripify(array<unsigned short>^ indices, array<PrimitiveGroup^>^ %primitiveGroups)
+	bool NvTriStripUtility::GenerateStrips(array<unsigned short>^ indices, [Out]array<PrimitiveGroup^>^ %primitiveGroups)
 	{
-		return Stripify(indices, primitiveGroups, true);
+		return GenerateStrips(indices, primitiveGroups, true);
 	}
 
-	bool NvTriStripUtility::Stripify(array<unsigned short>^ indices, array<PrimitiveGroup^>^ %primitiveGroups, bool validate)
+	bool NvTriStripUtility::GenerateStrips(array<unsigned short>^ indices, [Out]array<PrimitiveGroup^>^ %primitiveGroups, bool validate)
 	{
 		if (m_UseRestart != USE_RESTART_DEFAULT)
 		{
@@ -41,14 +44,13 @@ namespace ManagedNvTriStrip
 		NativePrimitiveGroup* primGroups = nullptr;
 		unsigned short numGroups = 0;
 
-		bool success = GenerateStrips(in_indices, (unsigned int)indices->Length,
+		bool success = ::GenerateStrips(in_indices, (unsigned int)indices->Length,
 			&primGroups, &numGroups, validate);
 
 		primitiveGroups = gcnew array<PrimitiveGroup^>(numGroups);
 		for (int i = 0; i < primitiveGroups->Length; i++)
 			primitiveGroups[i] = gcnew PrimitiveGroup(&primGroups[i]);
 
-		// clean up
 		if (in_indices)
 			delete[] in_indices;
 

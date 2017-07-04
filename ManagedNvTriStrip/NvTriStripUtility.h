@@ -3,7 +3,6 @@
 #include "NvTriStrip.h"
 #include "PrimitiveGroup.h"
 
-
 namespace ManagedNvTriStrip 
 {
 	/// <summary>

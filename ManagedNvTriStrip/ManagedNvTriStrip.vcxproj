@@ -136,7 +136,8 @@
     <Xdcmake />
     <Xdcmake />
     <Xdcmake>
-      <AdditionalOptions>/fo %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>
+      </AdditionalOptions>
     </Xdcmake>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
